@@ -94,7 +94,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               SizedBox(
                 height: 20.0,
               ),
-              Text("6 Articles",
+              Text("6 Comments",
                   style: TextStyle(fontSize: 46, fontWeight: FontWeight.bold))
             ],
           ),
