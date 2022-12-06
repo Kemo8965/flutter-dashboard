@@ -66,23 +66,28 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Flexible(
-                    child: Padding(
-                      padding: const EdgeInsets.all(18.0),
-                      child: Card(
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(18.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Icon(
-                              Icons.article,
-                              size: 26.0,
-                            ),
-                            SizedBox(
-                              width: 15.0,
-                            ),
-                            Text(
-                              "Articles",
-                              style: TextStyle(
-                                  fontSize: 26.0, fontWeight: FontWeight.bold),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.article,
+                                  size: 26.0,
+                                ),
+                                SizedBox(
+                                  width: 15.0,
+                                ),
+                                Text(
+                                  "Articles",
+                                  style: TextStyle(
+                                      fontSize: 26.0,
+                                      fontWeight: FontWeight.bold),
+                                )
+                              ],
                             )
                           ],
                         ),
