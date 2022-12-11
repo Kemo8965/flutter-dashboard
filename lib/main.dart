@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dashboard_1/components/dashboard.dart';
+import 'package:flutter_dashboard_1/components/dashboard/dashboard.dart';
+import 'package:flutter_dashboard_1/components/dashboard/mobile-dashboard.dart';
+import 'package:flutter_dashboard_1/responsive.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DashboardScreen(),
+      home: Responsive(
+          mobile: MobileDashboardScreen(), desktop: DashboardScreen()),
     );
   }
 }
